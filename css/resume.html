@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kamala's Resume</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/resume.css" />
+
+  <!-- JS -->
+  <script defer src="js/base.js"></script>
+  <script defer src="js/resume.js"></script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">Kamala</a>
+    </div>
+    <nav class="nav">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="resume.html" class="active">CV</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <!-- ===== RESUME SECTION ===== -->
+  <main class="container resume">
+    <h1 class="resume-title">Kamala’s Resume</h1>
+
+    <div class="resume-card">
+      <div class="resume-preview">
+        <!-- Embedded resume preview (PDF or image) -->
+        <iframe src="assets/resume.pdf" title="Resume Preview"></iframe>
+      </div>
+
+      <div class="resume-actions">
+        <a href="assets/resume.pdf" target="_blank" class="btn preview-btn">Preview Full Screen</a>
+        <a href="assets/resume.pdf" download class="btn download-btn">Download Resume</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>&copy; 2025 Kamala · All rights reserved</p>
+  </footer>
+
+</body>
+</html>

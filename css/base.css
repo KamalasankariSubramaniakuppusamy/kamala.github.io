@@ -1,0 +1,187 @@
+/* ----------------------------------------------------
+   BASE STYLES — Coffee · Vanilla · Chocolate Theme
+   Applies to all pages
+---------------------------------------------------- */
+
+/* ---------- COLOR VARIABLES ---------- */
+:root {
+  --bg: #2A1E1A;           /* dark chocolate background */
+  --text: #F8F3ED;         /* vanilla text */
+  --secondary: #E8DCC5;    /* soft latte accent text */
+  --accent: #CBB18A;       /* latte accent / buttons */
+  --hover: #8B5E3C;        /* cocoa hover tone */
+  --card: #3F2E27;         /* mocha background for cards */
+  --shadow: rgba(0, 0, 0, 0.25);
+  --logo: #3B2F2F;         /* espresso logo */
+  --band: #CBB18A;         /* latte band for header/footer */
+}
+
+/* ---------- RESET & BASICS ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover);
+}
+
+/* Containers */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  background-color: var(--band);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Logo */
+.logo a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--logo);
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+}
+
+/* Navigation links */
+/* ---------- NAVIGATION LINKS ---------- */
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav a {
+  position: relative;
+  color: var(--bg); /* dark chocolate text by default */
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.4rem 1.2rem;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: var(--logo);   /* espresso brown */
+  color: var(--band);              /* latte text */
+  transform: translateY(-2px);     /* subtle lift */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Active page link (optional highlight) */
+.nav a.active {
+  background-color: var(--logo);
+  color: var(--band);
+}
+
+/* ---------- MOBILE NAVIGATION ---------- */
+@media (max-width: 800px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--band);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1rem 2rem;
+    border-radius: 0 0 0.8rem 0.8rem;
+  }
+
+  .nav a {
+    color: var(--bg);
+    padding: 0.6rem 1rem;
+  }
+
+  .nav a:hover {
+    background-color: var(--logo);
+    color: var(--band);
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: var(--bg);
+  }
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background-color: var(--band);
+  color: var(--bg);
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: auto;
+  font-size: 0.95rem;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  background-color: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--hover); /* cocoa darken effect */
+  color: var(--text);
+}
+
+/* ---------- RESPONSIVE NAV ---------- */
+@media (max-width: 800px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--band);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1rem 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: var(--bg);
+  }
+}

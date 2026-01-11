@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Kamala</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <script defer src="js/base.js"></script>
+  <script defer src="js/projects.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo"><a href="index.html">Kamala</a></div>
+    <nav class="nav">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <main class="container projects">
+    <h1>Projects</h1>
+
+    <div class="project-card">
+      <h2>VulnGraph: Graph + LLM Embeddings for Vulnerability Detection</h2>
+      <p>
+        Developed a multimodal model integrating AST/CFG graph structures with LLM semantic embeddings via a two-way gating architecture, achieving 93.57% accuracy and producing explainable saliency subgraphs.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h2>SecureFixAgent: Hybrid LLM Agents for Vulnerability Detection</h2>
+      <p>
+        Built a hybrid framework combining LLM reasoning with bandit optimization for autonomous code repair and validation, improving patch success by 13.5%.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h2>MalCodeAI: Autonomous Malicious Code Detection</h2>
+      <p>
+        Designed a two-phase LLM pipeline for semantic code reasoning, exploit simulation, and patch generation, forming a generalizable foundation for code vulnerability research.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Kamala · All rights reserved</p>
+  </footer>
+
+</body>
+</html>

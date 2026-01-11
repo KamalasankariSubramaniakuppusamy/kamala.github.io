@@ -1,0 +1,62 @@
+/* ----------------------------------------------------
+   PUBLICATIONS PAGE — Coffee · Vanilla · Chocolate Theme
+---------------------------------------------------- */
+
+.publications {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ---------- PUBLICATION CARDS ---------- */
+.pub-card {
+  background-color: var(--band);   /* same as navbar/footer */
+  color: var(--logo);              /* espresso brown text */
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  padding: 1.8rem 2rem;
+  width: 90%;
+  max-width: 800px;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.pub-card:hover {
+  transform: scale(1.03);
+}
+
+/* Title */
+.pub-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--logo);
+}
+
+/* Journal/Conference info */
+.pub-card p em {
+  font-style: italic;
+  color: var(--logo);
+  opacity: 0.9;
+}
+
+/* Description text */
+.pub-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--logo);
+}
+
+/* Spacing between cards */
+.pub-card + .pub-card {
+  margin-top: 1.8rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 800px) {
+  .pub-card {
+    width: 95%;
+    padding: 1.5rem;
+  }
+}

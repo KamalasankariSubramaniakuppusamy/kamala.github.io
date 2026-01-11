@@ -1,0 +1,69 @@
+/* ----------------------------------------------------
+   SOCIAL ICONS — Coffee · Vanilla · Chocolate Theme
+---------------------------------------------------- */
+
+.hero-right {
+  position: relative;
+  display: inline-block;
+}
+
+/* ---------- SOCIAL ICON COLUMN ---------- */
+.social-icons {
+  position: absolute;
+  top: 50%;
+  right: -70px;            /* positions in right margin */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+  z-index: 2;
+}
+
+/* Circle container for each icon */
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: var(--card);      /* mocha background */
+  border-radius: 50%;
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: var(--hover);     /* cocoa hover */
+  transform: translateY(-3px);
+}
+
+/* Icon images */
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(1.1) sepia(10%) saturate(130%) hue-rotate(15deg);
+  transition: filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+  filter: invert(100%) brightness(1.3);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .social-icons {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.9rem;
+    margin-top: 1.5rem;
+    transform: none;
+  }
+}
+
+/* Optional soft-glow hover */
+.social-icons a:hover {
+  box-shadow: 0 6px 16px rgba(60, 47, 38, 0.3),
+              0 0 6px rgba(203, 177, 138, 0.45);
+}

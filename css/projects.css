@@ -1,0 +1,55 @@
+/* ----------------------------------------------------
+   PROJECTS PAGE — Coffee · Vanilla · Chocolate Theme
+---------------------------------------------------- */
+
+.projects {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* ---------- PROJECT CARDS ---------- */
+.project-card {
+  background-color: var(--band);   /* same as navbar/footer */
+  color: var(--logo);              /* espresso text */
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  padding: 1.8rem 2rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Zoom effect on hover */
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* Project titles */
+.project-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+  color: var(--logo);
+}
+
+/* Project text */
+.project-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--logo);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+}

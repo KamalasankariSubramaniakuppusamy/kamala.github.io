@@ -1,0 +1,204 @@
+/* ----------------------------------------------------
+   HOME PAGE — Coffee · Vanilla · Chocolate Theme
+---------------------------------------------------- */
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+  gap: 3rem;
+}
+
+/* Left content */
+.hero-left {
+  flex: 1 1 50%;
+  color: var(--text);
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.hero-sub {
+  color: var(--secondary);
+  font-size: 1.2rem;
+  max-width: 36rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Right portrait & icons */
+.hero-right {
+  flex: 1 1 40%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Portrait */
+.photo-frame {
+  position: relative;
+  width: 270px;
+  aspect-ratio: 3/4;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  border: 2px solid var(--accent);
+  box-shadow: 0 6px 18px var(--shadow);
+  background: var(--card);
+  margin: 0 auto;
+}
+
+/* Floating portrait */
+.floating {
+  animation: floatSoft 6s ease-in-out infinite;
+}
+
+@keyframes floatSoft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.95);
+}
+
+/* Focus Tag */
+.tag-block {
+  background: var(--card);
+  border-radius: 1rem;
+  padding: 1rem 1.3rem;
+  margin-top: 2rem;
+  color: var(--secondary);
+  box-shadow: 0 4px 10px var(--shadow);
+}
+
+.tag-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+.tag-text {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ---------- DASHBOARD CARDS SECTION ---------- */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* Generic card */
+.dashboard-card {
+  background-color: var(--band);   /* latte */
+  color: var(--logo);              /* espresso text */
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  padding: 1.8rem 2rem;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.02);
+}
+
+/* Headings inside cards */
+.dashboard-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--logo);
+}
+
+/* Scrollable boxes for Publications & Projects */
+.scroll-box {
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.scroll-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scroll-box li {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  color: var(--logo);
+}
+
+/* Learn more links */
+.learn-more {
+  display: inline-block;
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  color: var(--logo);
+  background: rgba(59, 47, 47, 0.1);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+  background: var(--logo);
+  color: var(--band);
+}
+
+/* About Me card tweaks */
+.about-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  color: var(--logo);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left,
+  .hero-right {
+    flex: 1 1 100%;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-sub {
+    font-size: 1.1rem;
+    margin: 0 auto;
+  }
+
+  .dashboard-card {
+    padding: 1.5rem;
+  }
+}

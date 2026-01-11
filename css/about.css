@@ -1,0 +1,125 @@
+/* ----------------------------------------------------
+   ABOUT PAGE — Coffee · Vanilla · Chocolate Theme
+---------------------------------------------------- */
+
+.about {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: var(--text);
+}
+
+/* ---------- INTRO SECTION ---------- */
+.about-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-intro h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: var(--accent); /* latte heading */
+}
+
+.about-intro p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--secondary);
+}
+
+/* ---------- EDUCATION & EXPERIENCE ---------- */
+.about-education,
+.about-experience {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: center;
+}
+
+/* Section headings */
+.about h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+}
+
+/* ---------- CARD DESIGN ---------- */
+.card {
+  background-color: var(--band);  /* same as navbar/footer */
+  color: var(--logo);              /* espresso brown */
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  padding: 1.8rem 2rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);          /* zoom on hover */
+}
+
+/* Card title */
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+  color: var(--logo);
+}
+
+/* Card meta details */
+.card .meta {
+  font-style: italic;
+  color: var(--logo);
+  opacity: 0.85;
+  margin-bottom: 0.8rem;
+}
+
+/* Lists inside cards */
+.card ul {
+  margin-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  color: var(--logo);
+}
+
+/* ---------- HONORS SECTION ---------- */
+.about-awards {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-awards h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.about-awards ul {
+  list-style: none;
+}
+
+.about-awards li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .about-education,
+  .about-experience {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
