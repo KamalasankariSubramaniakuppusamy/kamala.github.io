@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Kamala</title>
 
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/projects.css" />
-  <script defer src="js/base.js"></script>
-  <script defer src="js/projects.js"></script>
+
 </head>
-<body>
 
-  <header class="header">
-    <div class="logo"><a href="index.html">Kamala</a></div>
-    <nav class="nav">
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="publications.html">Publications</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-  </header>
+<!-- Dark theme default -->
+<body class="dark">
 
+  <!-- ================= NAVBAR PLACEHOLDER ================= -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ================= PROJECTS CONTENT ================= -->
   <main class="container projects">
+
     <h1>Projects</h1>
 
     <div class="project-card">
@@ -46,11 +46,17 @@
         Designed a two-phase LLM pipeline for semantic code reasoning, exploit simulation, and patch generation, forming a generalizable foundation for code vulnerability research.
       </p>
     </div>
+
   </main>
 
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <p>&copy; 2025 Kamala · All rights reserved</p>
   </footer>
+
+  <!-- ================= JS ================= -->
+  <script defer src="js/navbar.js"></script>
+  <script defer src="js/projects.js"></script>
 
 </body>
 </html>

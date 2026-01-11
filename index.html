@@ -11,34 +11,24 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/socials.css">
-
-  <!-- JS -->
-  <script defer src="js/base.js"></script>
-  <script defer src="js/home.js"></script>
 </head>
 
-<body>
-  <!-- ===== HEADER ===== -->
-  <header class="header">
-    <div class="logo">
-      <a href="index.html">Kamala</a>
-    </div>
-    <nav class="nav">
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="publications.html">Publications</a>
-      <a href="resume.html">CV</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-  </header>
+<!-- Dark theme default -->
+<body class="dark">
 
-  <!-- ===== HERO SECTION ===== -->
+  <!-- ================= NAVBAR PLACEHOLDER ================= -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ================= HERO SECTION ================= -->
   <main class="hero container">
-    <!-- LEFT SIDE: INTRO -->
+
+    <!-- LEFT SIDE -->
     <div class="hero-left">
       <h1 class="hero-title">Building Intelligent Systems That Think</h1>
+
       <p class="hero-sub">
         Exploring reasoning, cognition, and emergent behavior in large language models.
         Bridging structured graph understanding with language-driven AI to create
@@ -52,7 +42,7 @@
       </div>
     </div>
 
-    <!-- RIGHT SIDE: PORTRAIT + ICONS -->
+    <!-- RIGHT SIDE -->
     <div class="hero-right">
       <div class="photo-frame floating">
         <img src="assets/profile.png" alt="Portrait of Kamala" />
@@ -60,103 +50,109 @@
 
       <!-- SOCIAL ICONS -->
       <div class="social-icons">
-        <a href="https://bit.ly/kamalalinkedin" target="_blank" title="LinkedIn">
+        <a href="https://bit.ly/kamalalinkedin" target="_blank">
           <img src="assets/icons/linkedin.svg" alt="LinkedIn">
         </a>
-        <a href="https://bit.ly/kamalagithub" target="_blank" title="GitHub">
+        <a href="https://bit.ly/kamalagithub" target="_blank">
           <img src="assets/icons/github.svg" alt="GitHub">
         </a>
-        <a href="https://scholar.google.com/citations?user=QQtmt1wAAAAJ&hl=en" target="_blank" title="Google Scholar">
+        <a href="https://scholar.google.com/citations?user=QQtmt1wAAAAJ&hl=en" target="_blank">
           <img src="assets/icons/scholar.svg" alt="Google Scholar">
         </a>
-        <a href="https://www.researchgate.net/profile/Kamalasankari-Subramaniakuppusamy" target="_blank" title="ResearchGate">
+        <a href="https://www.researchgate.net/profile/Kamalasankari-Subramaniakuppusamy" target="_blank">
           <img src="assets/icons/researchgate.svg" alt="ResearchGate">
         </a>
-        <a href="https://medium.com/@iamkamalamskls" target="_blank" title="Medium">
+        <a href="https://medium.com/@iamkamalamskls" target="_blank">
           <img src="assets/icons/medium.svg" alt="Medium">
         </a>
-        <a href="mailto:iamkamalamskls@gmail.com" title="Email Me">
+        <a href="mailto:iamkamalamskls@gmail.com">
           <img src="assets/icons/email.svg" alt="Email">
         </a>
       </div>
 
-      <!-- CURRENT FOCUS TAG -->
+      <!-- CURRENT FOCUS -->
       <div class="tag-block">
         <p class="tag-title">Current Focus</p>
         <p class="tag-text">
-          Emergent behavior in LLMs, graph-augmented reasoning, and autonomous vulnerability remediation.
+          Emergent behavior in LLMs, graph-augmented reasoning,
+          and autonomous vulnerability remediation.
         </p>
       </div>
     </div>
   </main>
 
-  <!-- ===== DASHBOARD SECTION ===== -->
+  <!-- ================= DASHBOARD ================= -->
   <section class="dashboard container">
 
-    <!-- Publications Card -->
+    <!-- Publications -->
     <div class="dashboard-card">
       <h2>Recent Publications</h2>
       <div class="scroll-box">
         <ul>
           <li>
-            <strong>Bridging Semantics & Structure for Software Vulnerability Detection</strong>
-            <br><em>Complex Networks and Their Applications, 2025</em>
+            <strong>Bridging Semantics & Structure for Software Vulnerability Detection</strong><br>
+            <em>Complex Networks, 2025</em>
             <a href="publications.html#p1" class="learn-more">Learn More →</a>
           </li>
           <li>
-            <strong>SecureFixAgent: A Hybrid LLM Agent for Automated Vulnerability Repair</strong>
-            <br><em>ICMLA, 2025</em>
+            <strong>SecureFixAgent: Hybrid LLM Agent for Automated Repair</strong><br>
+            <em>ICMLA, 2025</em>
             <a href="publications.html#p2" class="learn-more">Learn More →</a>
           </li>
           <li>
-            <strong>MLCPD: A Unified Multi-Language Code Parsing Dataset</strong>
-            <br><em>arXiv Preprint, 2025</em>
+            <strong>MLCPD: Unified Multi-Language Code Parsing Dataset</strong><br>
+            <em>arXiv, 2025</em>
             <a href="publications.html#p3" class="learn-more">Learn More →</a>
           </li>
         </ul>
       </div>
     </div>
 
-    <!-- Projects Card -->
+    <!-- Projects -->
     <div class="dashboard-card">
       <h2>Highlighted Projects</h2>
       <div class="scroll-box">
         <ul>
           <li>
-            <strong>VulnGraph:</strong> Graph + LLM Embeddings for Vulnerability Detection
+            <strong>VulnGraph:</strong> Graph + LLM embeddings
             <a href="projects.html#proj1" class="learn-more">Learn More →</a>
           </li>
           <li>
-            <strong>SecureFixAgent:</strong> Hybrid LLM Agents for Code Repair
+            <strong>SecureFixAgent:</strong> Autonomous vulnerability repair
             <a href="projects.html#proj2" class="learn-more">Learn More →</a>
           </li>
           <li>
-            <strong>MalCodeAI:</strong> Autonomous Malicious Code Detection
+            <strong>MalCodeAI:</strong> Language-agnostic malicious code detection
             <a href="projects.html#proj3" class="learn-more">Learn More →</a>
           </li>
         </ul>
       </div>
     </div>
 
-    <!-- About Me Card -->
+    <!-- About -->
     <div class="dashboard-card about-card">
       <h2>About Me</h2>
       <p>
-        I’m a researcher at The George Washington University exploring the reasoning and cognitive mechanisms
-        behind large language models. My goal is to develop interpretable and self-correcting AI systems that
-        combine structured graph reasoning with language understanding.
+        I’m a researcher at The George Washington University studying the reasoning and
+        cognitive mechanisms behind large language models.
       </p>
       <p>
-        MSc Computer Science (2026) · BEng Electronics and Communication (2024)
-        <br>Student Academic Assistant | Software Engineer Intern @ Lillup
+        MSc Computer Science (2026) · BEng Electronics & Communication (2024)<br>
+        Student Academic Assistant · Software Engineer Intern @ Lillup
       </p>
+      <a href="about.html" class="learn-more">Learn More →</a>
     </div>
 
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <p>&copy; 2025 Kamala · All rights reserved</p>
   </footer>
+
+  <!-- ================= JS ================= -->
+  <script defer src="js/navbar.js"></script>
+  <script defer src="js/home.js"></script>
+
 </body>
 </html>

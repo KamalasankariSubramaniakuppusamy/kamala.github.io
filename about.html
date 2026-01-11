@@ -5,27 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Kamala</title>
 
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/about.css" />
-  <script defer src="js/base.js"></script>
-  <script defer src="js/about.js"></script>
+
 </head>
-<body>
 
-  <!-- HEADER (persistent) -->
-  <header class="header">
-    <div class="logo"><a href="index.html">Kamala</a></div>
-    <nav class="nav">
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="publications.html">Publications</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-  </header>
+<!-- Dark theme default -->
+<body class="dark">
 
-  <!-- ABOUT CONTENT -->
+  <!-- ================= NAVBAR PLACEHOLDER ================= -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ================= ABOUT CONTENT ================= -->
   <main class="container about">
+
     <section class="about-intro">
       <h1>About Me</h1>
       <p>
@@ -37,11 +35,13 @@
 
     <section class="about-education">
       <h2>Education</h2>
+
       <div class="card">
         <h3>Master of Science in Computer Science</h3>
         <p>The George Washington University, Washington, DC</p>
         <p class="meta">Expected May 2026 &nbsp;•&nbsp; GPA: 3.5 / 4.0</p>
       </div>
+
       <div class="card">
         <h3>Bachelor of Engineering in Electronics and Communication</h3>
         <p>St. Joseph's College of Engineering, Chennai, India</p>
@@ -51,6 +51,7 @@
 
     <section class="about-experience">
       <h2>Experience</h2>
+
       <div class="card">
         <h3>Student Academic Assistant</h3>
         <p>The George Washington University</p>
@@ -79,12 +80,17 @@
         <li>Best Paper Award – IEEE ICCDS 2024</li>
       </ul>
     </section>
+
   </main>
 
-  <!-- FOOTER (persistent) -->
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <p>&copy; 2025 Kamala · All rights reserved</p>
   </footer>
+
+  <!-- ================= JS ================= -->
+  <script defer src="js/navbar.js"></script>
+  <script defer src="js/about.js"></script>
 
 </body>
 </html>

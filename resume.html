@@ -11,35 +11,17 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/resume.css" />
-
-  <!-- JS -->
-  <script defer src="js/base.js"></script>
 </head>
 
-<body>
+<!-- Dark theme default -->
+<body class="dark">
 
-  <!-- ===== HEADER ===== -->
-  <header class="header">
-    <div class="logo"><a href="index.html">Kamala</a></div>
+  <!-- ================= NAVBAR PLACEHOLDER ================= -->
+  <div id="navbar-placeholder"></div>
 
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="publications.html">Publications</a>
-      <a href="resume.html" class="active">CV</a>
-    </nav>
-
-    <div class="theme-toggle" id="theme-toggle" title="Toggle theme">
-      <div class="sun"></div>
-      <div class="moon"></div>
-    </div>
-
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-  </header>
-
-  <!-- ===== MAIN CONTENT ===== -->
+  <!-- ================= MAIN CONTENT ================= -->
   <main class="resume-page container">
 
     <!-- Page Title -->
@@ -83,10 +65,13 @@
 
   </main>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <p>&copy; 2025 Kamala · All rights reserved</p>
   </footer>
+
+  <!-- ================= JS ================= -->
+  <script defer src="js/navbar.js"></script>
 
 </body>
 </html>

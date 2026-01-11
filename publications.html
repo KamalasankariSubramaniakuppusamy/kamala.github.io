@@ -5,32 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Publications | Kamala</title>
 
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/publications.css" />
-  <script defer src="js/base.js"></script>
-  <script defer src="js/publications.js"></script>
+
 </head>
-<body>
 
-  <header class="header">
-    <div class="logo"><a href="index.html">Kamala</a></div>
-    <nav class="nav">
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="publications.html">Publications</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-  </header>
+<!-- Dark theme default -->
+<body class="dark">
 
+  <!-- ================= NAVBAR PLACEHOLDER ================= -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ================= PUBLICATIONS CONTENT ================= -->
   <main class="container publications">
+
     <h1>Publications</h1>
 
     <div class="pub-card">
       <h2>Bridging Semantics & Structure for Software Vulnerability Detection</h2>
       <p><em>Complex Networks and Their Applications, 2025</em></p>
       <p>
-        Introduced a hybrid GNN + Transformer framework combining structural and semantic cues for multi-language vulnerability detection with interpretable graph-attention visualizations.
+        Introduced a hybrid GNN + Transformer framework combining structural and semantic cues
+        for multi-language vulnerability detection with interpretable graph-attention visualizations.
       </p>
     </div>
 
@@ -38,7 +39,8 @@
       <h2>SecureFixAgent: A Hybrid LLM Agent for Automated Vulnerability Repair</h2>
       <p><em>International Conference on Machine Learning and Applications (ICMLA), 2025</em></p>
       <p>
-        Integrated LLM reasoning with bandit optimization, enhancing patch success by 13.5% and reducing false positives by 10.8% with explainable patch rationales.
+        Integrated LLM reasoning with bandit optimization, enhancing patch success by 13.5%
+        and reducing false positives by 10.8% with explainable patch rationales.
       </p>
     </div>
 
@@ -46,14 +48,21 @@
       <h2>MLCPD: A Unified Multi-Language Code Parsing Dataset</h2>
       <p><em>arXiv Preprint, 2025</em></p>
       <p>
-        Released the first cross-language dataset unifying AST representations across 10 languages with standardized JSON–Parquet conversion pipelines.
+        Released the first cross-language dataset unifying AST representations across 10 languages
+        with standardized JSON–Parquet conversion pipelines.
       </p>
     </div>
+
   </main>
 
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <p>&copy; 2025 Kamala · All rights reserved</p>
   </footer>
+
+  <!-- ================= JS ================= -->
+  <script defer src="js/navbar.js"></script>
+  <script defer src="js/publications.js"></script>
 
 </body>
 </html>
