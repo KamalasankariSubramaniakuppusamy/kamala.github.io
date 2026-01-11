@@ -1,7 +1,18 @@
 /* ----------------------------------------------------
    PROJECTS PAGE — Coffee · Vanilla · Chocolate Theme
 ---------------------------------------------------- */
+/* ---------- PROJECTS PAGE TITLE ---------- */
+.projects h1 {
+  grid-column: 1 / -1;       /* span full width above grid */
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--accent);        /* EXACT same as About heading */
+  font-weight: 600;
+  font-size: 2.4rem;
+}
 
+
+/* ---------- PROJECTS PAGE TITLE ---------- */
 .projects {
   padding: 4rem 0;
   display: grid;
@@ -10,10 +21,12 @@
   align-items: stretch;
 }
 
+
+
 /* ---------- PROJECT CARDS ---------- */
 .project-card {
   background-color: var(--band);   /* same as navbar/footer */
-  color: var(--logo);              /* espresso text */
+  color: var(--accent);              /* espresso text */
   border-radius: 1.2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   padding: 1.8rem 2rem;

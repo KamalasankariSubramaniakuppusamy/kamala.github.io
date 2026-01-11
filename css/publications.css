@@ -3,17 +3,20 @@
 ---------------------------------------------------- */
 
 .publications {
+  color: var(--accent);
   padding: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 /* ---------- PUBLICATION CARDS ---------- */
 .pub-card {
   background-color: var(--band);   /* same as navbar/footer */
-  color: var(--logo);              /* espresso brown text */
+  color: var(--accent);              /* espresso brown text */
   border-radius: 1.2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   padding: 1.8rem 2rem;

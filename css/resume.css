@@ -15,8 +15,9 @@
   text-align: center;
   font-size: 2.2rem;
   font-weight: 600;
-  color: var(--text);          /* same as About Me */
-  margin: 3rem 0 2.5rem;
+  color: var(--accent); 
+  margin-top: 4rem;         /* same as About Me */
+  margin-bottom: 3rem;
 }
 
 /* Centers the resume frame */
