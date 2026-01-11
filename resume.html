@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kamala's Resume — AI & LLM Research" />
+  <title>Kamala | Resume</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/resume.css" />
+
+  <!-- JS -->
+  <script defer src="js/base.js"></script>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="logo"><a href="index.html">Kamala</a></div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="resume.html" class="active">CV</a>
+    </nav>
+
+    <div class="theme-toggle" id="theme-toggle" title="Toggle theme">
+      <div class="sun"></div>
+      <div class="moon"></div>
+    </div>
+
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="resume-page container">
+
+    <!-- Page Title -->
+    <h1 class="page-title">Kamala’s Resume</h1>
+
+    <!-- Resume Frame -->
+    <section class="resume-wrapper">
+      <div class="resume-card">
+
+        <p class="resume-text">
+          View or download my full academic and research resume.
+        </p>
+
+        <div class="resume-preview">
+          <iframe
+            src="assets/resume.pdf"
+            title="Resume Preview"
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Buttons BELOW the frame -->
+    <div class="resume-actions">
+      <a
+        href="assets/resume.pdf"
+        target="_blank"
+        class="btn">
+        Preview Full Screen
+      </a>
+
+      <a
+        href="assets/resume.pdf"
+        download
+        class="btn">
+        Download Resume
+      </a>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>&copy; 2025 Kamala · All rights reserved</p>
+  </footer>
+
+</body>
+</html>
