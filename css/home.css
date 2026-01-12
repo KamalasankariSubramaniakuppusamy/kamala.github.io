@@ -19,7 +19,7 @@
 }
 
 .hero-title {
-  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  font-size: clamp(2.4rem, 2.5vw, 3.5rem);
   font-weight: 600;
   color: var(--text);
   margin-bottom: 1rem;
@@ -92,13 +92,14 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--accent);
+  color: var(--logo);
   margin-bottom: 0.4rem;
+  justify-items: center;
 }
 
 .tag-text {
   font-size: 1rem;
-  color: var(--text);
+  color: var(--logo);
   line-height: 1.5;
 }
 
@@ -106,12 +107,11 @@
 .dashboard {
   display: grid;
   grid-template-columns: repeat(3, minmax(260px, 1fr));
-  gap: 2rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   align-items: stretch;
 }
-
 
 /* Generic card */
 .dashboard-card {
@@ -220,14 +220,22 @@
 /* About Me card tweaks */
 .about-card p {
   font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 0.8rem;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
   color: var(--logo);
 }
 .about-card .learn-more {
-  margin-top: 1rem;
-  margin-bottom: 0.6rem;   /* space from card edge */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;   /* space from card edge */
   align-self: center;
+  background-color: var(--logo);
+  color: var(--accent)
+
+}
+
+.about-card .learn-more:hover {
+  background-color: var(--hover);        /* coffee */
+  color: var(--secondary);            /* latte text */
 }
 
 
@@ -247,7 +255,7 @@
 }
 
 .scroll-box .learn-more:hover {
-  background-color: var(--bg);        /* coffee */
+  background-color: var(--hover);        /* coffee */
   color: var(--secondary);            /* latte text */
 }
 
