@@ -39,7 +39,7 @@
   margin-top: 2.6rem; /* slight push down to align with photo bottom */
 
   justify-content: center;   /* center relative to focus card */
-  max-width: 36rem;          /* same width as hero-sub */       
+  max-width: 36rem;          /* same width as hero-sub */        /* pushes buttons to the right */
 }
 
 
@@ -95,14 +95,14 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--logo);
+  color: var(--accent1);
   margin-bottom: 0.4rem;
   justify-items: center;
 }
 
 .tag-text {
   font-size: 1rem;
-  color: var(--logo);
+  color: var(--accent1);
   line-height: 1.5;
 }
 

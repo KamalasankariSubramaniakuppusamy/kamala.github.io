@@ -26,6 +26,7 @@ body.light {
   --text: #2A1E1A;         /* dark coffee text */
   --secondary: #3B2F2F;    /* espresso secondary */
   --accent: #3B2F2F;       /* espresso buttons */
+  --accent1: #CBB18A;
   --hover: #8B5E3C;        /* dark cocoa hover */
   --card: #3F2E27;         /* latte cards */
   --logo: #CBB18A;         /* dark logo */
