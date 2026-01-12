@@ -6,7 +6,7 @@
 .hero {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 4rem 0;
   gap: 3rem;
@@ -35,10 +35,13 @@
 
 .hero-actions {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 2.6rem; /* slight push down to align with photo bottom */
+
+  justify-content: center;   /* center relative to focus card */
+  max-width: 36rem;          /* same width as hero-sub */       
 }
+
 
 /* Right portrait & icons */
 .hero-right {
@@ -108,8 +111,8 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(260px, 1fr));
   gap: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
   align-items: stretch;
 }
 
