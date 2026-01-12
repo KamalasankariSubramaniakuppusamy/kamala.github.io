@@ -3,25 +3,29 @@
 ---------------------------------------------------- */
 
 /* ---------- HERO SECTION ---------- */
-.hero {
+.hero-inner {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 4rem 0;
-  gap: 3rem;
+
+  max-width: 1050px;   
+  margin: 0 auto;      /* centers hero block */
+  gap: 3rem;           /* controlled spacing */
 }
+
+
 
 /* Left content */
 .hero-left {
-  flex: 1 1 50%;
-  color: var(--text);
+  flex: 1;
+  max-width: 560px; /* keeps text column aligned with cards */
 }
+
 
 .hero-title {
   font-size: clamp(2.4rem, 2.5vw, 3.5rem);
   font-weight: 600;
-  color: var(--text);
+  color: var(--secondary);
   margin-bottom: 1rem;
   line-height: 1.1;
 }
@@ -45,10 +49,10 @@
 
 /* Right portrait & icons */
 .hero-right {
-  flex: 1 1 40%;
-  position: relative;
-  display: inline-block;
-  text-align: center;
+  flex: 0 0 360px;  /* fixed visual column */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Portrait */
@@ -85,11 +89,12 @@
 .tag-block {
   background: var(--card);
   border-radius: 1rem;
-  padding: 1rem 1.3rem;
-  margin-top: 2rem;
-  color: var(--secondary);
-  box-shadow: 0 4px 10px var(--shadow);
+  padding: 1.3rem 1.6rem;
+  margin-top: 1.8rem;
+  box-shadow: 0 6px 18px var(--shadow);
+  text-align: center; /* ✅ THIS */
 }
+
 
 .tag-title {
   font-size: 0.9rem;
@@ -97,7 +102,7 @@
   letter-spacing: 0.08em;
   color: var(--accent1);
   margin-bottom: 0.4rem;
-  justify-items: center;
+  text-align: center;
 }
 
 .tag-text {
@@ -111,10 +116,12 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(260px, 1fr));
   gap: 1rem;
-  margin-top: 2.5rem;
-  margin-bottom: 4rem;
+  margin-top: 3rem; /* was larger before */
+  margin-bottom: 2rem;
   align-items: stretch;
 }
+
+
 
 /* Generic card */
 .dashboard-card {
@@ -267,6 +274,8 @@
   .hero {
     flex-direction: column;
     text-align: center;
+    padding: 3.5rem 0 3rem; /* slightly tighter vertical rhythm */
+
   }
 
   .hero-left,
