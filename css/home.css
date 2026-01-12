@@ -11,6 +11,8 @@
   max-width: 1050px;   
   margin: 0 auto;      /* centers hero block */
   gap: 3rem;           /* controlled spacing */
+  transform: translateX(-2rem);
+  margin-top: 4rem;
 }
 
 

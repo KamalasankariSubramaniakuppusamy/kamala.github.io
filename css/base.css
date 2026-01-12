@@ -3,35 +3,31 @@
    Applies to ALL pages
 ---------------------------------------------------- */
 
-/* ====================================================
-   DEFAULT THEME — DARK (Chocolate / Coffee)
-   ==================================================== */
+/* DEFAULT = LIGHT */
 :root {
-  --bg: #2A1E1A;           /* dark chocolate background */
-  --text: #F8F3ED;         /* vanilla text */
-  --secondary: #E8DCC5;    /* soft latte accent text */
-  --accent: #CBB18A;       /* latte buttons / accents */
-  --hover: #8B5E3C;        /* cocoa hover */
-  --card: #3F2E27;         /* mocha card background */
-  --shadow: rgba(0, 0, 0, 0.25);
-  --logo: #3B2F2F;         /* espresso logo text */
-  --band: #CBB18A;         /* latte navbar/footer */
+  --bg: #CBB18A;
+  --text: #2A1E1A;
+  --secondary: #3B2F2F;
+  --accent: #3B2F2F;
+  --accent1: #CBB18A;
+  --hover: #8B5E3C;
+  --card: #3F2E27;
+  --logo: #CBB18A;
+  --band: #2A1E1A;
 }
 
-/* ====================================================
-   LIGHT THEME — EXACT INVERSE (Vanilla / Coffee)
-   ==================================================== */
-body.light {
-  --bg: #CBB18A;           /* vanilla background */
-  --text: #2A1E1A;         /* dark coffee text */
-  --secondary: #3B2F2F;    /* espresso secondary */
-  --accent: #3B2F2F;       /* espresso buttons */
-  --accent1: #CBB18A;
-  --hover: #8B5E3C;        /* dark cocoa hover */
-  --card: #3F2E27;         /* latte cards */
-  --logo: #CBB18A;         /* dark logo */
-  --band: #2A1E1A;         /* latte navbar/footer */
+/* DARK MODE */
+body.dark {
+  --bg: #2A1E1A;
+  --text: #F8F3ED;
+  --secondary: #E8DCC5;
+  --accent: #CBB18A;
+  --hover: #8B5E3C;
+  --card: #3F2E27;
+  --logo: #3B2F2F;
+  --band: #CBB18A;
 }
+
 
 /* ====================================================
    RESET & BASICS
@@ -167,23 +163,28 @@ a:hover {
   transform: scale(0.5);
 }
 
+.theme-toggle .moon {
+  opacity: 1;
+  transform: scale(1);
+}
+
 /* Moon (Dark Mode Indicator) */
 .theme-toggle .sun {
   background: #f4c430;
   box-shadow: 0 0 10px rgba(244,196,48,0.7);
-  opacity: 1;
-  transform: scale(1);
-}
-
-/* Dark mode state */
-body.dark .theme-toggle .moon {
   opacity: 0;
   transform: scale(0.5);
 }
 
-body.dark .theme-toggle .moon {
+/* Dark mode state */
+body.dark .theme-toggle .sun {
   opacity: 1;
   transform: scale(1);
+}
+
+body.dark .theme-toggle .moon {
+  opacity: 0;
+  transform: scale(0.5);
 }
 
 /* ====================================================
