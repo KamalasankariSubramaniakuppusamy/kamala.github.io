@@ -104,22 +104,32 @@
 
 /* ---------- DASHBOARD CARDS SECTION ---------- */
 .dashboard {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 2rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  align-items: stretch;
 }
+
 
 /* Generic card */
 .dashboard-card {
-  background-color: var(--band);   /* latte */
-  color: var(--logo);              /* espresso text */
+  background-color: var(--band);
+  color: var(--logo);
   border-radius: 1.2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
-  padding: 1.8rem 2rem;
+  padding: 1.4rem 1.4rem;
   transition: transform 0.3s ease;
+
+  height: 360px;        /* square feel */
+  max-width: 340px;     /* prevents wide stretch */
+  margin: 0 auto;       /* centers in column */
+
+  display: flex;
+  flex-direction: column;
 }
+
 
 .dashboard-card:hover {
   transform: scale(1.02);
@@ -134,10 +144,11 @@
 
 /* Scrollable boxes for Publications & Projects */
 .scroll-box {
-  max-height: 220px;
+  flex: 1;
   overflow-y: auto;
-  padding-right: 0.5rem;
+  padding-right: 0.4rem;
 }
+
 
 .scroll-box ul {
   list-style: none;
@@ -145,11 +156,48 @@
   margin: 0;
 }
 
+/* ---------- MINI CARDS INSIDE DASHBOARD ---------- */
 .scroll-box li {
-  margin-bottom: 1.2rem;
-  font-size: 1.1rem;
-  color: var(--logo);
+  background-color: var(--bg);           /* coffee */
+  color: var(--secondary);               /* latte */
+  border-radius: 1rem;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;                   /* GAP between cards */
+
+  /* soft 3D float */
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.22),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08); /* light fade border */
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+.scroll-box li:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.28),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+
+
+/* Title inside mini-card */
+.scroll-box li strong {
+  display: block;
+  color: var(--secondary);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  gap: 0.5rem;
+}
+
+/* Secondary text (em) */
+.scroll-box li em {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--secondary);
+  opacity: 0.85;
+  margin-bottom: 0.4rem;
+}
+
 
 /* Learn more links */
 .learn-more {
@@ -176,6 +224,32 @@
   margin-bottom: 0.8rem;
   color: var(--logo);
 }
+.about-card .learn-more {
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;   /* space from card edge */
+  align-self: center;
+}
+
+
+/* Learn More button — Latte → Coffee */
+.scroll-box .learn-more {
+  display: inline-block;
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+
+  background-color: var(--secondary); /* latte */
+  color: var(--bg);                   /* coffee text */
+
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.scroll-box .learn-more:hover {
+  background-color: var(--bg);        /* coffee */
+  color: var(--secondary);            /* latte text */
+}
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
@@ -200,5 +274,15 @@
 
   .dashboard-card {
     padding: 1.5rem;
+  }
+}
+@media (max-width: 1000px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-card {
+    max-width: 100%;
+    height: auto;
   }
 }

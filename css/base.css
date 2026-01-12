@@ -27,7 +27,7 @@ body.light {
   --secondary: #3B2F2F;    /* espresso secondary */
   --accent: #3B2F2F;       /* espresso buttons */
   --hover: #8B5E3C;        /* dark cocoa hover */
-  --card: #8B5E3C;         /* latte cards */
+  --card: #3F2E27;         /* latte cards */
   --logo: #CBB18A;         /* dark logo */
   --band: #2A1E1A;         /* latte navbar/footer */
 }
