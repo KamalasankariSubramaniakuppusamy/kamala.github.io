@@ -69,6 +69,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".nav a");
+  const currentPath = window.location.pathname;
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    // Home page case
+    if (
+      (currentPath === "/" || currentPath.endsWith("index.html")) &&
+      href === "index.html"
+    ) {
+      link.classList.add("active");
+    }
+
+    // Other pages
+    else if (href && currentPath.endsWith(href)) {
+      link.classList.add("active");
+    }
+  });
+});
+
+
   /* ==================================================
      SMOOTH SCROLL FOR IN-PAGE LINKS
      ================================================== */
@@ -91,3 +114,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.body.classList.add("fade-in");
 });
+
