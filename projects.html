@@ -22,32 +22,84 @@
   <div id="navbar-placeholder"></div>
 
   <!-- ================= PROJECTS CONTENT ================= -->
-  <main class="container projects">
+<main class="container projects-page">
+  <h1 class="page-title">Projects</h1>
 
-    <h1>Projects</h1>
+  <!-- UNIVERSAL WRAPPER -->
+  <section class="projects-wrapper">
 
-    <div class="project-card">
-      <h2>VulnGraph: Graph + LLM Embeddings for Vulnerability Detection</h2>
-      <p>
-        Developed a multimodal model integrating AST/CFG graph structures with LLM semantic embeddings via a two-way gating architecture, achieving 93.57% accuracy and producing explainable saliency subgraphs.
-      </p>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-item">
+        <h2>VulnGraph</h2>
+        <p class="project-sub">
+          Graph + LLM Embeddings for Vulnerability Detection
+        </p>
+        <p>
+          Developed a multimodal model integrating AST/CFG graph structures
+          with LLM semantic embeddings via a two-way gating architecture,
+          achieving 93.57% accuracy with explainable saliency subgraphs.
+        </p>
+
+        <div class="project-actions">
+          <a href="assets/papers/vulngraph.pdf" target="_blank" class="btn-outline">
+            Paper PDF
+          </a>
+          <a href="https://github.com/yourrepo/vulngraph" target="_blank" class="btn-outline">
+            GitHub Repo
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-item">
+        <h2>SecureFixAgent</h2>
+        <p class="project-sub">
+          Hybrid LLM Agents for Vulnerability Detection
+        </p>
+        <p>
+          Built a hybrid framework combining LLM reasoning with bandit
+          optimization for autonomous code repair and validation,
+          improving patch success by 13.5%.
+        </p>
+
+        <div class="project-actions">
+          <a href="assets/papers/securefixagent.pdf" target="_blank" class="btn-outline">
+            Paper PDF
+          </a>
+          <a href="https://github.com/yourrepo/securefixagent" target="_blank" class="btn-outline">
+            GitHub Repo
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-item">
+        <h2>MalCodeAI</h2>
+        <p class="project-sub">
+          Autonomous Malicious Code Detection
+        </p>
+        <p>
+          Designed a two-phase LLM pipeline for semantic code reasoning,
+          exploit simulation, and patch generation, forming a generalizable
+          foundation for vulnerability research.
+        </p>
+
+        <div class="project-actions">
+          <a href="assets/papers/malcodeai.pdf" target="_blank" class="btn-outline">
+            Paper PDF
+          </a>
+          <a href="https://github.com/yourrepo/malcodeai" target="_blank" class="btn-outline">
+            GitHub Repo
+          </a>
+        </div>
+      </div>
+
     </div>
+  </section>
+</main>
 
-    <div class="project-card">
-      <h2>SecureFixAgent: Hybrid LLM Agents for Vulnerability Detection</h2>
-      <p>
-        Built a hybrid framework combining LLM reasoning with bandit optimization for autonomous code repair and validation, improving patch success by 13.5%.
-      </p>
-    </div>
-
-    <div class="project-card">
-      <h2>MalCodeAI: Autonomous Malicious Code Detection</h2>
-      <p>
-        Designed a two-phase LLM pipeline for semantic code reasoning, exploit simulation, and patch generation, forming a generalizable foundation for code vulnerability research.
-      </p>
-    </div>
-
-  </main>
 
   <!-- ================= FOOTER ================= -->
   <footer class="footer">

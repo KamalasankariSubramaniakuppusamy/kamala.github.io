@@ -1,68 +1,103 @@
-/* ----------------------------------------------------
-   PROJECTS PAGE — Coffee · Vanilla · Chocolate Theme
----------------------------------------------------- */
-/* ---------- PROJECTS PAGE TITLE ---------- */
-.projects h1 {
-  grid-column: 1 / -1;       /* span full width above grid */
-  margin-bottom: 1rem;
-  text-align: center;
-  color: var(--accent);        /* EXACT same as About heading */
-  font-weight: 600;
-  font-size: 2.4rem;
+/* ====================================================
+   PROJECTS PAGE — UNIVERSAL WRAPPER MODEL
+   ==================================================== */
+
+.projects-page {
+  padding: 4rem 0;
 }
 
+/* UNIVERSAL WRAPPER (navbar/band color) */
+.projects-wrapper {
+  background-color: var(--band);
+  border-radius: 1.6rem;
+  padding: 2.4rem;
+  margin-top: 3rem;
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.25);
+}
 
-/* ---------- PROJECTS PAGE TITLE ---------- */
-.projects {
-  padding: 4rem 0;
+/* Two-column grid */
+.projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  align-items: stretch;
 }
 
-
-
-/* ---------- PROJECT CARDS ---------- */
-.project-card {
-  background-color: var(--band);   /* same as navbar/footer */
-  color: var(--accent);              /* espresso text */
+/* INDIVIDUAL PROJECT CARD (page background color) */
+.project-item {
+  background-color: var(--bg);
   border-radius: 1.2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   padding: 1.8rem 2rem;
+  color: var(--text);
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.25),
+    inset 0 0 0 1px rgba(255,255,255,0.06);
   transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-/* Zoom effect on hover */
-.project-card:hover {
-  transform: scale(1.03);
+.project-item:hover {
+  transform: translateY(-4px);
 }
 
-/* Project titles */
-.project-card h2 {
-  font-size: 1.4rem;
-  margin-bottom: 0.7rem;
-  color: var(--logo);
+/* Titles */
+
+.page-title{
+
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+.project-item h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0.4rem;
+  color: var(--text);
 }
 
-/* Project text */
-.project-card p {
+.project-sub {
+  font-size: 0.95rem;
+  font-style: italic;
+  opacity: 0.85;
+  margin-bottom: 0.9rem;
+}
+
+/* Body */
+.project-item p {
   font-size: 1.05rem;
   line-height: 1.6;
-  color: var(--logo);
+  margin-bottom: 1.2rem;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* Actions */
+.project-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn-outline {
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  border: 1.5px solid var(--text);
+  color: var(--text);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+/* Responsive */
 @media (max-width: 900px) {
-  .projects {
+  .projects-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
   }
 
-  .project-card {
-    padding: 1.5rem;
+  .projects-wrapper {
+    padding: 1.6rem;
   }
 }
